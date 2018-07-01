@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.teta.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Welcome to this math quiz for kids:\n Never say I can't, always say I'll try"
+            android:textSize="23sp"
+            android:textStyle="italic"
+            android:textColor="#e65100"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/kids"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Please, Enter your name"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/use_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:text="your name"
+            android:textSize="20sp"
+            android:background="#ffe0b2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/get_started"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="#e65100">
+
+        </View>
+
+        <!-- the quiz -->
+        <!-- question_1 -->
+        <TextView
+            android:id="@+id/question_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="1. How much is 222+83?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 306"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 305"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 333"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_2 -->
+        <TextView
+            android:id="@+id/question_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="2. How much is 65-43?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 22"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 32"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 20"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_3 -->
+        <TextView
+            android:id="@+id/question_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="3. How much is 24X2?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 38"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 48"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 68"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_4 -->
+        <TextView
+            android:id="@+id/question_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="4. How much is 849 divided by 10?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 8.9"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 84"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 84.9"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_5 -->
+        <TextView
+            android:id="@+id/question_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="5. What number should be added to 66 to get 121 as a sum?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 55"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 66"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 44"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_6 -->
+        <TextView
+            android:id="@+id/question_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="6. The number can be divided by 5 if its unit digit is"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 0 or 5"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 2 or 6"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 10 or 5"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_7 -->
+        <TextView
+            android:id="@+id/question_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="7. How many months are there in a century?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 120"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 1200"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 12000"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_8 -->
+        <TextView
+            android:id="@+id/question_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="8. 3/5th of 100 is?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 30"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 50"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 60"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_9 -->
+        <TextView
+            android:id="@+id/question_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="9. 0.75 is same as?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 7.5%"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 75%"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 0.075%"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- question_10 -->
+        <TextView
+            android:id="@+id/question_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="4dp"
+            android:background="#ffcd32"
+            android:text="10. What percentage to be added to 40 to make it 50?"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_1_question_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 25"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_2_question_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 70"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <CheckBox
+            android:id="@+id/answer_3_question_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text=" 15"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <!-- submit button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:background="#e3ff00"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:onClick="submitAnswers"/>
+
+    </LinearLayout>
+
+</ScrollView>
